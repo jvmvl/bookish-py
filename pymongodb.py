@@ -2,6 +2,11 @@ from pymongo import MongoClient
 from bson.objectid import ObjectId
 from datetime import datetime
 
+"""
+  references :
+    https://pymongo.readthedocs.io/en/stable/tutorial.html
+    https://www.w3schools.com/python/python_mongodb_query.asp
+"""
 # connect to the MongoDB.
 conn = MongoClient('localhost', 27017)
 
