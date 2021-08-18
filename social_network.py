@@ -4,7 +4,7 @@
 # On dessine les arêtes entre les sommets voulus
 #-------------------------------------------------------------------------------
 
-from networkx import nx,diameter,radius,center
+import networkx as nx
 import matplotlib.pyplot as plt
 
 social_network = nx.Graph()
@@ -33,8 +33,8 @@ nx.draw(social_network, with_labels=True)
 plt.draw()
 plt.show()
 
-print("Number of Nodes : ",social_network.number_of_nodes())
-print("Number of Edges : ",social_network.number_of_edges())
-print("Diameter : ",diameter(social_network))
-print("Radius : ",radius(social_network))
-print("Center : ",center(social_network))
+print("Number of Nodes : ", social_network.number_of_nodes())
+print("Number of Edges : ", social_network.number_of_edges())
+print("Diameter : ", nx.diameter(social_network))
+print("Radius : ", nx.radius(social_network))
+print("Center : ", nx.center(social_network))
