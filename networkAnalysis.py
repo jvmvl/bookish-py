@@ -2,7 +2,7 @@ import pandas as pd
 import networkx as nx
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('//Users//jamalchahir//Desktop//data.csv')
+df = pd.read_csv('data.csv')
 df1 = df[['Assignee', 'Reporter']]
 df1.dropna(inplace=True)
 sn = nx.Graph()
